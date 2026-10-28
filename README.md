@@ -41,6 +41,17 @@ Define your own item generators (vanilla and Slimefun items) that run on energy,
 Java 21 is required. Place the resulting jar in the server's `plugins/` folder next to the Slimefun core
 ([Slimefun4-Drake](https://github.com/SlimefunNewHorizons/Slimefun4-Drake)).
 
+Dependencies are resolved from the Drake Maven repository, <https://maven.drakescraft.cl> (GitHub Pages of
+[`SlimefunNewHorizons/maven-repo`](https://github.com/SlimefunNewHorizons/maven-repo)):
+
+| Line | Core | Java |
+|---|---|---|
+| 1.21.11 (production) | `slimefun-core 11.0-Drake-1.21.11-SNAPSHOT` | 21 |
+| Universal 26.x (Paper 26.2) | `slimefun-core 11.0-Universal-26.x-SNAPSHOT` + `dough-core 1.3.1-Universal-26.x-SNAPSHOT` | 25 |
+
+To use an already built jar on the 26.x line, port it with `scripts/portar_addons.py <input> <output>` from `ai-hub`
+(relocates the Dallas fork package to the universal one and raises `api-version` to 1.21).
+
 ## Upstream & license
 
 Community Slimefun addon; the original author and URL were not recorded in the legacy monorepo (the GPL-3.0 LICENSE file was preserved).

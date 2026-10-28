@@ -9,6 +9,7 @@ version = "1.21-Drake-v1"
 
 repositories {
     mavenCentral()
+    maven("https://maven.drakescraft.cl/")
     maven("https://jitpack.io/")
     maven("https://repo.papermc.io/repository/maven-public/") {
         name = "papermc-repo"
